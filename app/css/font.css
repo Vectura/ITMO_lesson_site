@@ -1,0 +1,49 @@
+//require Exo2Bold
+@font-face {
+	font-family: 'Exo2Bold';
+	src:url('../fonts/Exo2Bold/Exo2Bold.eot');
+	src:url('../fonts/Exo2Bold/Exo2Bold.eot?#iefix')format('ambedded-opentype')
+	url('../fonts/Exo2Bold/Exo2Bold.woff')format('woff')url(../fonts/Exo2Bold/Exo2Bold.ttf)format('ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+//require OpenSansBold
+@font-face {
+	font-family: 'OpenSansBold';
+	src:url('../fonts/OpenSansBold/OpenSansBold.eot');
+	src:url('../fonts/OpenSansBold/OpenSansBold.eot?#iefix')format('ambedded-opentype')
+	url('../fonts/OpenSansBold/OpenSansBold.woff')format('woff')url(../fonts/OpenSansBold/OpenSansBold.ttf)format('ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+//require OpenSansLight
+@font-face {
+	font-family: 'OpenSansLight';
+	src:url('../fonts/OpenSansLight/OpenSansLight.eot');
+	src:url('../fonts/OpenSansLight/OpenSansLight.eot?#iefix')format('ambedded-opentype')
+	url('../fonts/OpenSansLight/OpenSansLight.woff')format('woff')url(../fonts/OpenSansLight/OpenSansLight.ttf)format('ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+//require OpenSansRegular
+@font-face {
+	font-family: 'OpenSansRegular';
+	src:url('../fonts/OpenSansRegular/OpenSansRegular.eot');
+	src:url('../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix')format('ambedded-opentype')
+	url('../fonts/OpenSansRegular/OpenSansRegular.woff')format('woff')url(../fonts/OpenSansRegular/OpenSansRegular.ttf)format('ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+//require OpenSansSemiBold
+@font-face {
+	font-family: 'OpenSansSemiBold';
+	src:url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot');
+	src:url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix')format('ambedded-opentype')
+	url('../fonts/OpenSansSemiBold/OpenSansSemiBold.woff')format('woff')url(../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf)format('ttf');
+	font-style: normal;
+	font-weight: normal;
+}
