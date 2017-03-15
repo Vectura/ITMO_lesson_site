@@ -7,6 +7,17 @@ body
 	overflow-x: hidden
 	color: #222
 
+h1, h2, h3, h4, h5, h6
+	font-family: "OpenSansLight", sans-serif
+	font-weight: normal
+
+.hidden
+	display: none
+
+a
+	underline: none
+
+
 .main-head
 	background-image: url(../img/head-img.jpg)
 	min-height: 100vh
@@ -19,8 +30,32 @@ body
 	.logo
 		display: block
 		width: 100%
-		width: 300px
-		height: 300px
+		position: relative
+		padding-left: 80px
+		.logo-titr
+			display: block
+			margin: 0
+			padding: 0
+			position: absolute
+			width: 100%
+			text-align: center
+			font-size: 28px
+			font-family: 'OpenSansSemiBold', sans-serif
+			left: 15px
+			top: 80px
+			color: #fff
+			text-transform: uppercase
 		img
 			width: 100%
-
+			opacity: .9
+			width: 200px
+			height: 209px
+	.head-mnu
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: inline-block
+				a
+					margin-right: 20px	
