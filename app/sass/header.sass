@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6
 	display: none
 
 a
-	underline: none
+	outline: none !important
 
 
 .main-head
@@ -25,37 +25,53 @@ a
 	background-position: top center
 	overflow: hidden
 
+
 .mnu-line
-	padding-top: 30px
+	padding-top: 40px
+	padding-left: 80px
+	.col-lg-3
+		width: 205px
+		height: 200px
 	.logo
 		display: block
 		width: 100%
 		position: relative
-		padding-left: 80px
 		.logo-titr
 			display: block
-			margin: 0
-			padding: 0
-			position: absolute
 			width: 100%
 			text-align: center
 			font-size: 28px
 			font-family: 'OpenSansSemiBold', sans-serif
-			left: 15px
-			top: 80px
-			color: #fff
+			color: #181818 
 			text-transform: uppercase
 		img
 			width: 100%
-			opacity: .9
-			width: 200px
-			height: 209px
-	.head-mnu
-		ul
-			list-style-type: none
-			padding: 0
-			margin: 0
-			li
-				display: inline-block
-				a
-					margin-right: 20px	
+
+
+
+nav
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		padding-top: 10px
+
+		li
+			display: inline-block
+			padding: 20px 30px
+			a
+				margin-right: 5px
+				color: #DE5B25
+
+
+.head-mnu
+	text-align: center
+	font-size: 19px
+	.active
+		a
+			color: #4C4C4C
+			text-decoration: underline
+	a:hover
+		color: #4C4C4C
+		text-decoration: underline
+		transition: all .5s ease
