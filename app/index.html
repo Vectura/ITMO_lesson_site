@@ -2,56 +2,63 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kakie to ruki</title>
+	<title>Timber</title>
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/header.min.css">
-	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/libs.min.css"></head>
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<body class="ishome">
-		<header class='main-head'>
 
-			<div class="container-fluid">
+</head>
+<body class="ishome">
+
+	<header class='main-head'>
+		<div class="head-bottom-png">
+
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="mnu-line">
+					<div class="mnu-line clearfix">
 
-							<div class="col-lg-3">
-								<div class="logo">
-									<img src="img/pencil-logo.png" alt="header_logo">
-									<div class="logo-titr">
-										"Карандашъ"
-									</div>
-								</div>
+						<div class="col-lg-1">
+							<div class="logo">
+								<img src="img/images/logo.png" alt="header_logo">
 							</div>
+						</div>
 
-							<div class="col-lg-7">
-								<nav class="head-mnu">
-									<ul>
-										<li class="active"><a href="#">О нас</a></li>
-										<li><a href="#">Проекты на заказ</a></li>
-										<li><a href="#">Услуги</a></li>
-										<li><a href="#">Аксессуары</a></li>
-										<li><a href="#">Контакты</a></li>
-									</ul>
-								</nav>
-							</div>
-
+						<div class="col-lg-6 col-lg-offset-5">
+							<nav class="main-mnu">
+								<ul>
+									<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">projects</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Features</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-	</body>
+			<div class="col-lg-7">
+			<div class="row">
+			<div class="owl-carousel">
+				<a href="#" class="text-carousel"><span>We listen.</span></a>
+				<a href="#" class="text-carousel"><span>We develop.</span></a>
+				<a href="#" class="text-carousel"><span>We help.</span></a>
+			</div>
+			</div>
+			</div>
+
+		</div>
+	</header>
 
 
-
-
-
-	<script src='js/libs.min.js'></script>
-	<script src='js/common.js'></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
 	<script src='libs/bootstrap/js/bootstrap.min.js'></script>
 </body>
 </html>

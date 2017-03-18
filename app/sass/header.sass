@@ -1,53 +1,40 @@
+@import vars.sass
+@import fonts.sass
+
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "OpenSansRegular", sans-serif
+	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
-	color: #222
+	color: #2f2f2f
 
 h1, h2, h3, h4, h5, h6
-	font-family: "OpenSansLight", sans-serif
+	font-family: "RobotoRegular", sans-serif
 	font-weight: normal
-
-.hidden
-	display: none
 
 a
 	outline: none !important
 
 
 .main-head
-	background-image: url(../img/head-img.jpg)
-	min-height: 100vh
+	position: relative
+	background: url(../img/images/bgTop.jpg) no-repeat
+	.head-bottom-png
+		height: 610px
+		background: url(../img/images/sliderL.png) no-repeat
+		background-position: bottom right
+		overflow: hidden
+	height: 610px
 	background-size: cover
 	background-position: top center
 	overflow: hidden
 
-
 .mnu-line
-	padding-top: 40px
-	padding-left: 80px
-	.col-lg-3
-		width: 205px
-		height: 200px
+	padding-top: 62px
 	.logo
 		display: block
-		width: 100%
-		position: relative
-		.logo-titr
-			display: block
-			width: 100%
-			text-align: center
-			font-size: 28px
-			font-family: 'OpenSansSemiBold', sans-serif
-			color: #181818 
-			text-transform: uppercase
-		img
-			width: 100%
-
-
 
 nav
 	ul
@@ -55,23 +42,62 @@ nav
 		padding: 0
 		margin: 0
 		padding-top: 10px
-
 		li
 			display: inline-block
-			padding: 20px 30px
+			&:not(.active)
+				border-left: 1px solid #222	
 			a
-				margin-right: 5px
-				color: #DE5B25
-
-
-.head-mnu
-	text-align: center
-	font-size: 19px
+				margin: 0 15px
+				color: #fff
+				font-size: em(14px)
+				font-weight: bold
+				text-transform: uppercase
+				font-family: "OpenSansBold", sans-serif
+	
+			
+.main-mnu
 	.active
-		a
-			color: #4C4C4C
-			text-decoration: underline
+		> a
+				color: $accent
+				text-decoration: none
+				margin-left: 0
 	a:hover
-		color: #4C4C4C
-		text-decoration: underline
+		color: $accent
+		text-decoration: none
 		transition: all .5s ease
+
+
+.owl-carousel
+	font-size: 100px
+	color: #fff		
+	padding-left: 200px
+	padding-top: 125px
+	font-family: "OpenSansBold", sans-serif
+	.text-carousel
+		color: #fff
+		text-decoration: none
+		span:hover
+			margin: 0
+			padding-bottom: 5px
+			box-shadow: 0 4px 0 $accent
+			transition: all .5s ease
+
+	
+	.owl-nav
+		display: none
+	.owl-dot
+		display: block
+		width: 12px
+		height: 12px
+		margin-right: 12px
+		display: inline-block
+		border-radius: 50%
+		background-color: #796C69
+		&:hover
+			background-color: #fff
+			transition: all .5s ease
+
+
+
+
+@import app/sass/owl.carousel.sass
