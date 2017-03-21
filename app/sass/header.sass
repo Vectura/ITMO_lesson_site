@@ -11,19 +11,22 @@ body
 	color: #2f2f2f
 
 h1, h2, h3, h4, h5, h6
-	font-family: "RobotoRegular", sans-serif
-	font-weight: normal
+	font-family: "RobotoRegular", sans-serif!important
+	font-weight: normal!important
 
 a
 	outline: none !important
 
+.s-white
+	min-height: 200px
+	padding: 30px 0
 
 .main-head
 	position: relative
-	background: url(../img/images/bgTop.jpg) no-repeat
+	background: url(../img/bgTop.jpg) no-repeat
 	.head-bottom-png
 		height: 610px
-		background: url(../img/images/sliderL.png) no-repeat
+		background: url(../img/sliderL.png) no-repeat
 		background-position: bottom right
 		overflow: hidden
 	height: 610px
@@ -49,7 +52,7 @@ nav
 			a
 				margin: 0 15px
 				color: #fff
-				font-size: em(14px)
+				font-size: 14px
 				font-weight: bold
 				text-transform: uppercase
 				font-family: "OpenSansBold", sans-serif
@@ -93,6 +96,8 @@ nav
 		display: inline-block
 		border-radius: 50%
 		background-color: #796C69
+		&.active
+			background-color: #fff
 		&:hover
 			background-color: #fff
 			transition: all .5s ease

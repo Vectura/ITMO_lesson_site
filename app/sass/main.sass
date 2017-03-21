@@ -1,11 +1,199 @@
+@import vars.sass
+@import fonts.sass
+
+.s-progress
+	padding-bottom: 0!important
+
+.s-adv-item
+	text-align: center
+	width: 295px
+	h2
+		font-size: 30px
+		font-family: "RobotoRegular", sans-serif
+	.project
+		color: #747474
+		font-size: 20px
+		font-family: "RobotoLight", sans-serif
+	.description
+		color: #9A9A9A
+		font-size: 13px
+		font-family: "RobotoLight", sans-serif
+		line-height: 1.9
+
+.s-wide-picture-text
+	text-align: center
+	padding-top: 25px
+	h1
+		font-family: "RobotoRegular", sans-serif
+		font-size: 28px
+	p
+		font-size: 16px
+		font-family: "RobotoLight", sans-serif
+
+.picture-wrap
+	text-align: center
+	padding-top: 20px
 
 
+.s-tree-wrap
+	background: url(../img/upBefor.png), url(../img/sliderL.png), url(../img/bgTop.jpg) 
+	background-repeat: no-repeat
+	background-position: 0 0, bottom center	
+	height: 500px
+	.features-item
+		text-align: center
+		padding-top: 140px
+		color: #fff
+		line-height: 1.9
+		width: 295px
+		p
+			padding-top: 15px
+		span
+			display: inline-block
+			width: 120px
+			height: 120px
+			border: 3px solid #fff
+			border-radius: 50%
+			font-size: 35px
+			i
+				vertical-align: middle
+				line-height: 120px
+
+.s-stuff
+	.s-stuff-head
+		text-align: center
+		p
+			font-family: "RobotoRegular", sans-serif
+			font-size: 16px
+			padding-top: 5px
+	
+	.stuff-item	
+		text-align: center
+		padding: 50px 0
+		width: 295px
+		.stuff-text-wrap
+			font-family: "RobotoLight", sans-serif
+			p
+				padding-top: 20px
+				font-size: 13px
+				line-height: 1.9
+		.stuff-social-wrap
+			a
+				display: inline-block
+				width: 15px
+				height: 15px
+				margin-right: 15px
+				color: #222
+				&:hover
+					color: $accent
+	&::after					
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px
+		background-image: linear-gradient(to right, #fff, #dbdbdb, #fff)
 
 
+.s-percent
+	.percent-item
+		text-align: center
+		p
+			padding-top: 5px
+			font-size: 13px
+			line-height: 1.9
+		svg
+			width: 70px
+			height: 70px
 
+.s-reviews
+	.reviews-head
+		text-align: center
+		padding-bottom: 50px
+	.item-wraper
+		.reviews-text
+			width: 75%
+		font-family: "RobotoLight", sans-serif
+		position: relative
+		p
+			line-height: 1.9
+		&.left.up
+			text-align: right
+			border-right: 1px solid #dbdbdb
+			padding-bottom: 12px
+			.reviews-img-wrap
+				position: absolute
+				top: 9px
+				right: 45px
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				bottom: 0
+				right: 0
+				background-image: linear-gradient(to right, #fff, #dbdbdb)
+		&.right.up
+			border-left: 1px solid #dbdbdb
+			padding-bottom: 12px
+			.reviews-text
+				float: right
+				text-align: left
+			.reviews-img-wrap
+				position: absolute
+				top: 9px
+				left: 45px	
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				bottom: 0
+				right: 0
+				background-image: linear-gradient(to left, #fff, #dbdbdb)	
+		&.left.down
+			text-align: right
+			border-right: 1px solid #dbdbdb
+			padding-top: 12px
+			.reviews-img-wrap
+				position: absolute
+				top: 21px
+				right: 45px
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				top: 0
+				right: 0
+				background-image: linear-gradient(to right, #fff, #dbdbdb)	
+		&.right.down
+			border-left: 1px solid #dbdbdb
+			padding-top: 12px
+			.reviews-text
+				float: right
+				text-align: left
+			.reviews-img-wrap
+				position: absolute
+				top: 21px
+				left: 45px	
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				top: 0
+				right: 0
+				background-image: linear-gradient(to left, #fff, #dbdbdb)			
 
-
-
-
-
-
+.s-works
+	height: 300px
+	.head-works
+		text-align: center
+		color: #fff
+		padding-top: 200px
+		font-family: "RobotoRegular", sans-serif
+		h1
+			font-size: 45px
+		p
+			font-family: "RobotoLight", sans-serif
+			font-size: 16px
