@@ -39,25 +39,57 @@ a
 	.logo
 		display: block
 
+//Меню + всплывающие блоки
 nav
-	ul
+	.level-1
 		list-style-type: none
 		padding: 0
 		margin: 0
+		text-transform: uppercase
 		padding-top: 10px
 		li
+			&:hover
+				.level-2
+					li
+						max-height: 40px
 			display: inline-block
 			&:not(.active)
 				border-left: 1px solid #222	
-			a
+			> a
 				margin: 0 15px
 				color: #fff
 				font-size: 14px
 				font-weight: bold
-				text-transform: uppercase
 				font-family: "OpenSansBold", sans-serif
-	
+	.level-2
+		position: absolute
+		margin: 0
+		padding: 0
+		top: 30px
+		li
+			display: block
+			background-color: rgba(26, 23, 24, 0.6)
+			margin: 0
+			padding: 0
+			height: 40px
+			max-height: 0
+			overflow: hidden
+			text-transform: lowercase
+			-webkit-transition: max-height 0.3s linear
+			-moz-transition: max-height 0.3s linear
+			transition: max-height 0.2s ease
+			&:hover
+				background-color: $accent
+			a
+				display: block
+				padding: 10px 15px 5px 15px
+				margin: 0
+				&:hover
+					color: #fff
+
 			
+
+
 .main-mnu
 	.active
 		> a
@@ -69,6 +101,75 @@ nav
 		text-decoration: none
 		transition: all .5s ease
 
+//Часики CSS
+
+.clock-face
+	position: relative
+	width: 150px
+	height: 150px
+	margin-top: -70px
+	margin-left: 380px
+	background-color: rgba(246, 244, 244, 0.3)
+	transform: rotate(-90deg)
+	border-radius: 50%
+	border: 3px solid #64B7FF
+
+.cap
+	position: absolute
+	width: 15px
+	height: 15px
+	border-radius: 50%
+	top: 46%
+	left: 46%
+	background-color: #fff
+	box-shadow: 0 0 6px 2px #fff
+
+.second-arrow
+	position: absolute
+	width: 65px
+	height: 2px
+	background-color: #64B7FF
+	top: 50%
+	left: 50%
+	transform-origin: 0 50%
+	animation-name: rotate
+	animation-duration: 60s
+	animation-iteration-count: infinite
+
+.minutes-arrow
+	position: absolute
+	box-shadow: 0 0 6px 2px #64B7FF
+	width: 60px
+	height: 4px
+	background-color: #fff
+	top: 50%
+	left: 50%
+	transform-origin: 0 50%
+	animation-name: rotate
+	animation-duration: 3600s
+	animation-iteration-count: infinite
+
+.hour-arrow
+	position: absolute
+	box-shadow: 0 0 6px 1px #fff
+	width: 40px
+	height: 5px
+	background-color: #222
+	top: 50%
+	left: 50%
+	transform-origin: 0 50%
+	transform: rotate(45deg)
+
+
+@keyframes rotate
+	0%
+		transform: rotate(0deg)
+
+	100%
+		transform: rotate(360deg)
+
+
+//Каруселька
 
 .owl-carousel
 	font-size: 100px
