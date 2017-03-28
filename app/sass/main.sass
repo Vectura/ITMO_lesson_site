@@ -1,12 +1,13 @@
 @import vars.sass
 @import fonts.sass
+@import media.sass
 
 .s-progress
 	padding-bottom: 0!important
 
 .s-adv-item
 	text-align: center
-	width: 295px
+	width: 100%
 	h2
 		font-size: 30px
 		font-family: "RobotoRegular", sans-serif
@@ -49,7 +50,7 @@
 .s-tree-wrap
 	.features-item
 		text-align: center
-		padding-top: 150px
+		padding-top: 130px
 		color: #fff
 		line-height: 1.9
 		width: 100%
@@ -66,24 +67,26 @@
 				vertical-align: middle
 				line-height: 120px
 
-.s-stuff
-	.s-stuff-head
-		text-align: center
+
+.s-stuff-head,
+.s-down-head
+	text-align: center
+	h1
+		font-size: 28px
+	p
+		font-family: "RobotoRegular", sans-serif
+		font-size: 16px
+		padding-top: 5px	
+.stuff-item	
+	text-align: center
+	padding: 50px 0
+	width: 100%
+	.stuff-text-wrap
+		font-family: "RobotoLight", sans-serif
 		p
-			font-family: "RobotoRegular", sans-serif
-			font-size: 16px
-			padding-top: 5px
-	
-	.stuff-item	
-		text-align: center
-		padding: 50px 0
-		width: 100%
-		.stuff-text-wrap
-			font-family: "RobotoLight", sans-serif
-			p
-				padding-top: 20px
-				font-size: 13px
-				line-height: 1.9
+			padding-top: 20px
+			font-size: 13px
+			line-height: 1.9
 		.stuff-social-wrap
 			a
 				display: inline-block
@@ -98,7 +101,7 @@
 		position: absolute
 		width: 100%
 		height: 1px
-		background-image: linear-gradient(to right, #fff, #dbdbdb, #fff)
+	  background-image: linear-gradient(to right, #fff, #dbdbdb, #fff)
 
 
 .s-percent
@@ -193,7 +196,8 @@
 				background-image: linear-gradient(to left, #fff, #dbdbdb)			
 
 .s-works,
-.s-news
+.s-news,
+.s-questions
 	margin-bottom: 30px
 	.head-works,
 	.head-news
@@ -208,7 +212,8 @@
 			font-size: 16px
 
 .s-work-buttons-wrap,
-.button-down-wrap
+.button-down-wrap,
+.button-down
 	text-align: center
 	margin-bottom: 40px
 	.arrow,
@@ -243,6 +248,7 @@
 		margin-bottom: 40px
 	.s-works-item
 		position: relative
+		text-align: center
 		display: block
 		color: #414e5b
 		overflow: hidden
@@ -273,6 +279,7 @@
 			transform: scale(1.1)
 
 .s-blog
+	margin-bottom: 80px
 	.s-blog-item
 		width: 100%
 		margin-bottom: 30px
@@ -359,5 +366,198 @@
 			text-decoration: none
 			color: $accent				
 
+.s-form
+	margin-bottom: 30px
+	.form-wrapper
+		.name,
+		.mail
+			width: 350px
+			height: 40px
+			margin-right: 8px
+			padding-left: 10px
+			background-color: #EDEDED
+			border: none
+			border-radius: 5px
+			color: #A1A1A1
+			&:focus
+				background-color: #2d2d2d
+		.subject
+			width: 713px
+			height: 40px
+			margin-top: 10px
+			padding-left: 10px
+			background-color: #EDEDED	
+			border: none
+			border-radius: 5px
+			color: #A1A1A1
+			&:focus
+				background-color: #2d2d2d
+		.message
+			width: 713px	
+			height: 147px
+			margin-top: 10px
+			padding-left: 10px
+			padding-top: 10px
+			background-color: #EDEDED
+			border: none
+			border-radius: 5px
+			color: #A1A1A1
+			&:focus
+				background-color: #2d2d2d
+		span	
+			display: inline-block	
+			position: relative
+			i
+				display: block
+				position: absolute
+				top: 20px
+				left: 13px
+				color: #fff
+			.form-button
+				color: #fff
+				text-transform: uppercase
+				font-size: 13px
+				font-family: "RobotoBold", sans-serif
+				font-weight: bold
+				padding: 10px 15px 10px 30px
+				background-color: #222
+				margin-right: 8px
+				margin-top: 10px
+				border-radius: 7px
+				border: none
+				&:hover
+					background-color: $accent
+	.s-form-links
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				display: block
+				margin-bottom: 14px
+			a
+				font-family: "RobotoLight", sans-serif
+				color: #666666
+				font-size: 13px
+				text-decoration: none
+				i
+					color: #222
+					font-size: 13px
+					margin-right: 14px
+				&:hover
+					color: $accent
 
-		
+
+.s-map
+	background: url(../img/upBefor.png), url(../img/sliderL.png), rgb(161, 161, 161)  
+	background-repeat: no-repeat
+	background-position: 0 0, bottom center
+	height: 500px
+	text-align: center
+	vertical-align: middle
+	span
+		display: block
+		font-weight: bold
+		font-size: 50px
+		color: #fff
+		line-height: 100%
+		padding-top: 200px
+.button-down-map
+	margin-top: 20px
+
+
+.s-callback
+	background: url(../img/upBefor.png), url(../img/bgFooter.png), url(../img/bgTop.jpg)  
+	background-repeat: no-repeat
+	background-position: 0 0, bottom center	
+	height: 560px
+	color: #fff
+	.callback-head	
+		text-align: center
+		color: #fff
+		font-family: "RobotoLight", sans-serif
+		padding-top: 130px
+		font-weight: bold
+	.callback-form-wrap	
+		text-align: center
+		padding-top: 30px
+		.callback-mail
+			width: 350px
+			height: 40px
+			border: none
+			border-radius: 7px
+			background-color: #222	
+			color: #fff
+			padding-left: 7px
+		.callback-button
+			text-transform: uppercase
+			border: none
+			color: #fff
+			background-color: $accent
+			height: 40px
+			border-radius: 0 7px 7px 0
+			margin-left: -10px
+	.callback-social-wrap
+		list-style-type: none
+		padding: 0
+		margin: 0
+		text-align: center
+		padding-top: 40px
+		margin-bottom: 80px
+		li
+			display: inline-block
+			a
+				text-decoration: none
+				color: #fff
+				&:hover
+					color: $accent
+					span
+						border-color: $accent
+				span
+					display: block
+					border: 2px solid #fff
+					border-radius: 50%
+					width: 50px
+					height: 50px
+					text-align: center
+					vertical-align: middle
+					margin-right: 18px
+					i	
+						font-size: 20px
+						padding-top: 12px
+	.dark-line-footer
+		padding-top: 50px
+		p
+			color: #A1A1A1
+		.footer-search
+			text-align: right
+			a
+				color: #A1A1A1 
+				text-decoration: none
+			.search
+				text-align: left
+				padding-bottom: 20px
+				border: none
+				background-color: #101010
+				color: #fff
+				width: 105px
+		.footer-mnu
+			list-style-type: none
+			padding: 0
+			margin: 0
+			text-align: right
+			li
+				display: inline-block
+				a
+					color: #A1A1A1
+					font-family: "RobotoLight", sans-serif
+					font-size: 13px	
+					text-decoration: none		
+					border-right: 1px solid #343434	
+					margin-right: 10px
+					padding-right: 10px
+					&:hover
+						color: $accent
+				.no
+					border: none 
+				

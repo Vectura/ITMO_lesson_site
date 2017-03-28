@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/header.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
+	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 </head>
@@ -13,93 +14,137 @@
 <body class="ishome">
 	
 	<header class='main-head'>
-		<div class="head-bottom-png">
-
-			<div class="container">
+		
+		<div class="container">
+			<div class="mnu-line">
 				<div class="row">
-					<div class="mnu-line clearfix">
 
-						<div class="col-lg-1">
-							<div class="logo">
-								<img src="img/logo.png" alt="header_logo">
+					<div class="col-lg-1 col-md-1 col-sm-2">
+						<div class="logo">
+							<img src="img/logo.png" alt="header_logo">
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-4 col-sm-4">
+						<div class="clock-wrap">
+							<div class="clock-face">
+								<div class="second-arrow"></div>
+								<div class="minutes-arrow"></div>
+								<div class="hour-arrow"></div>
+								<div class="cap"></div>
 							</div>
 						</div>
+					</div>
+					<div class="col-sm-2 col-sm-offset-3">		
+						<nav class="main-mnu hidden-mnu hidden-lg hidden-md">
+							<ul class="level-1">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">projects</a>
+									<ul class="level-2 project">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">News</a>
+									<ul class="level-2 news">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Features</a>
+									<ul class="level-2 features">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-1">
+						<a href="#" class="toggle-mnu hidden-lg hidden-md"><span></span></a>
+					</div>
+					<div class="col-lg-6 col-md-7 hidden-sm">
+						<nav class="main-mnu">
+							<ul class="level-1">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">projects</a>
+									<ul class="level-2">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">News</a>
+									<ul class="level-2">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Features</a>
+									<ul class="level-2">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<div class="col-lg-6 col-lg-offset-5">
-							<nav class="main-mnu">
-								<ul class="level-1">
-									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">projects</a>
-										<ul class="level-2">
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-										</ul>
-									</li>
-									<li><a href="#">News</a>
-										<ul class="level-2">
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Features</a>
-										<ul class="level-2">
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-											<li><a href="#">Lorem ipsum.</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Contact</a>
-									</li>
-								</ul>
-							</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-7 col-sm-6 col-sm-offset-1">
+					<div class="row">
+						<div class="owl-carousel">
+							<a href="#" class="text-carousel"><span>We listen.</span></a>
+							<a href="#" class="text-carousel"><span>We develop.</span></a>
+							<a href="#" class="text-carousel"><span>We advise.</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-7">
-				<div class="row">
-					<div class="owl-carousel">
-						<a href="#" class="text-carousel"><span>We listen.</span></a>
-						<a href="#" class="text-carousel"><span>We develop.</span></a>
-						<a href="#" class="text-carousel"><span>We advise.</span></a>
-					</div>
-				</div>
-			</div>
-			<div class="clock-face">
-				<div class="second-arrow"></div>
-				<div class="minutes-arrow"></div>
-				<div class="hour-arrow"></div>
-				<div class="cap"></div>
-			</div>
-
-		</div>
+		</div>			
 	</header>
 	
 	<section class="s-white s-progress">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="s-adv-item">
 						<h2 data-count="708"></h2>
 						<p class="project">Awesome Projects</p>
-						<p class="description">Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo.</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et. laoreet phasellus ut nisi id.</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="s-adv-item">
 						<h2 data-count="12300"></h2>
 						<p class="project">Happy Customers</p>
 						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et. laoreet phasellus ut nisi id.</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="s-adv-item">
 						<h2 data-count="246"></h2>
 						<p class="project">Professional Awards</p>
@@ -129,7 +174,7 @@
 			<div class="row">
 				<div class="s-tree-wrap">
 					<div class="container">
-						<div class="col-lg-4">
+						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="features-item">
 								<div class="item-picture">
 									<span><i class="fa fa-heart" aria-hidden="true"></i></span>
@@ -138,7 +183,7 @@
 								<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="features-item">
 								<div class="item-picture">
 									<div class="row">
@@ -151,7 +196,7 @@
 								<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="features-item">
 								<div class="item-picture">
 									<div class="row">
@@ -184,7 +229,7 @@
 
 
 		<div class="container">
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="stuff-item">
 					<div class="stuff-img-wrap">
 						<img src="img/picTeam/picT1.png" alt="picT1">
@@ -202,7 +247,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="stuff-item">
 					<div class="stuff-img-wrap">
 						<img src="img/picTeam/picT2.png" alt="picT1">
@@ -220,7 +265,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="stuff-item">
 					<div class="stuff-img-wrap">
 						<img src="img/picTeam/picT3.png" alt="picT1">
@@ -245,7 +290,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="percent-item">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3">
 						<div id="container"></div>
 						<h3>WordPress</h3>
 						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis. </p>
@@ -253,7 +298,7 @@
 				</div>
 
 				<div class="percent-item">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3">
 						<div id="container-2"></div>
 						<h3>HTML5</h3>
 						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis. </p>
@@ -261,7 +306,7 @@
 				</div>
 
 				<div class="percent-item">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3">
 						<div id="container-3"></div>
 						<h3>CSS3</h3>
 						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis. </p>
@@ -269,7 +314,7 @@
 				</div>
 
 				<div class="percent-item">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3">
 						<div id="container-4"></div>
 						<h3>Woocommerce</h3>
 						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis. </p>
@@ -287,7 +332,7 @@
 						<h2>What Our Customers Say About Us?</h2>
 					</div>
 				</div>
-				<div class="[ col-lg-6 ] item-wraper left up">
+				<div class="[ col-lg-6 col-md-6 col-sm-6 ] item-wraper left up">
 					<div class="reviews-text">
 						<h4>Anna Smith, Company Inc.</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minima dolor illo, blanditiis, fugit molestias itaque est ullam, iste labore voluptate. Id, aliquid architecto repellat et nisi? Quia.</p>
@@ -296,7 +341,7 @@
 						<img src="img/picAbout/aboutP1.png" alt="">
 					</div>
 				</div>
-				<div class="[ col-lg-6 ] item-wraper right up">
+				<div class="[ col-lg-6 col-md-6 col-sm-6 ] item-wraper right up">
 					<div class="reviews-text">
 						<h4>Anna Smith, Company Inc.</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minima dolor illo, blanditiis, fugit molestias itaque est ullam, iste labore voluptate. Id, aliquid architecto repellat et nisi? Quia.</p>
@@ -305,7 +350,7 @@
 						<img src="img/picAbout/aboutP2.png" alt="">
 					</div>
 				</div>	
-				<div class="[ col-lg-6 ] item-wraper left down">
+				<div class="[ col-lg-6 col-md-6 col-sm-6 ] item-wraper left down">
 					<div class="reviews-text">
 						<h4>Anna Smith, Company Inc.</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minima dolor illo, blanditiis, fugit molestias itaque est ullam, iste labore voluptate. Id, aliquid architecto repellat et nisi? Quia.</p>
@@ -314,7 +359,7 @@
 						<img src="img/picAbout/aboutP3.png" alt="">
 					</div>
 				</div>	
-				<div class="[ col-lg-6 ] item-wraper right down">
+				<div class="[ col-lg-6 col-md-6 col-sm-6 ] item-wraper right down">
 					<div class="reviews-text">
 						<h4>Anna Smith, Company Inc.</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minima dolor illo, blanditiis, fugit molestias itaque est ullam, iste labore voluptate. Id, aliquid architecto repellat et nisi? Quia.</p>
@@ -341,368 +386,482 @@
 					</div>
 				</div>
 			</div>
-		</section>	
+		</div>
+	</section>	
 
-		<section class="s-works-gullery">
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-					<div class="s-work-buttons-wrap">
-						<a href="#" onclick="return false;">All Works</a>
-						<a href="#" onclick="return false;">Polygraphy</a>
-						<a href="#" onclick="return false;">Branding</a>
-						<a href="#" onclick="return false;">Web UI</a>
-						<a href="#" onclick="return false;">Text Styles</a>
-					</div>
+	<section class="s-works-gullery">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="s-work-buttons-wrap">
+					<a href="#" onclick="return false;">All Works</a>
+					<a href="#" onclick="return false;">Polygraphy</a>
+					<a href="#" onclick="return false;">Branding</a>
+					<a href="#" onclick="return false;">Web UI</a>
+					<a href="#" onclick="return false;">Text Styles</a>
 				</div>
 			</div>
-			<div class="s-works-gallery-wrap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic1.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic1.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Recycled Paper – Business Card Mock Up</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>215</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>14</a></div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic2.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic2.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Environment Logos Set</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>369</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>86</a></div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic3.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic3.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Beag Simple WEB UI</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>400</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>124</a></div>
-							</div>
-						</div>
-
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic4.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic4.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Pop Candy Text Effect</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>480</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>95</a></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic5.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic5.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">User Interface Elements</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>215</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>14</a></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic6.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic6.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Stationery Branding Mock Up</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>375</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>102</a></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic7.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic7.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Darko – Business Card Mock Up</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>440</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>35</a></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic8.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic8.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Woody Poster Text Effect</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>693</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>204</a></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<a class="s-works-item" href="#">
-								<img src="img/prettyPhotoImages/thumb_pic9.jpg" alt="work-1">
-								<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
-								<span class="hidden">
-									<span class="portfolio-popup">
-										<span class="container">
-											<span class="row">
-												<span class="col-lg-12 col-lg-offset-2">
-													<img class="popup-img" src="img/prettyPhotoImages/pic9.jpg" alt="Alt">
-												</span>
-												<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-											</span>
-										</span>
-									</span>
-								</span>
-							</a>
-							<div class="works-inter">
-								<h4><a href="#" onclick="return false;">Foil Mini Badges</a></h4>
-								<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>512</div>
-								<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>136</a></div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="row">
-								<div class="button-down-wrap">
-									<a href="#" class="arrow" onclick="return false;"><i class="fa fa-arrow-down" aria-hidden="true"></i>Load More Projects</a>
-									<a href="#" class="shopping-cart" onclick="return false;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Buy on Themeforest</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="s-news">
-			<div class="s-tree-wrap-min">
-				<div class="container">
-					<div class="row">
-						<div class="head-news">
-							<div class="col-lg-12">
-								<h1>What’s New?</h1>
-								<p>Get the latest news from our blog</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="s-blog">
+		</div>
+		<div class="s-works-gallery-wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
-						<div class="s-blog-item">
-							<img src="img/picNews/news1.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic1.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic1.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Recycled Paper – Business Card Mock Up</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>215</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>14</a></div>
 						</div>
 					</div>
 
-
-					<div class="col-lg-6">
-
-						<div class="s-blog-item">
-							<img src="img/picNews/news2.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic2.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic2.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Environment Logos Set</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>369</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>86</a></div>
 						</div>
-
 					</div>
 
-					<div class="col-lg-6">
-
-						<div class="s-blog-item">
-							<img src="img/picNews/news3.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic3.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic3.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Beag Simple WEB UI</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>400</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>124</a></div>
 						</div>
-
 					</div>
 
-					<div class="col-lg-6">
-
-						<div class="s-blog-item">
-							<img src="img/picNews/news4.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic4.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic4.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Pop Candy Text Effect</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>480</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>95</a></div>
 						</div>
-
 					</div>
-
-					<div class="col-lg-6">
-
-						<div class="s-blog-item">
-							<img src="img/picNews/news5.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic5.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic5.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">User Interface Elements</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>215</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>14</a></div>
 						</div>
-
 					</div>
-
-					<div class="col-lg-6">
-
-						<div class="s-blog-item">
-							<img src="img/picNews/news6.jpg" alt="blog-1">
-							<div class="inter">
-								<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
-								<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
-								<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
-								<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-							</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic6.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic6.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Stationery Branding Mock Up</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>375</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>102</a></div>
 						</div>
-
 					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic7.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic7.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Darko – Business Card Mock Up</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>440</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>35</a></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic8.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic8.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Woody Poster Text Effect</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>693</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>204</a></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a class="s-works-item" href="#">
+							<img src="img/prettyPhotoImages/thumb_pic9.jpg" alt="work-1">
+							<div class="s-works-content"><i class="fa fa-search-plus"></i></div>
+							<span class="hidden">
+								<span class="portfolio-popup">
+									<span class="container">
+										<span class="row">
+											<span class="col-lg-12 col-lg-offset-2">
+												<img class="popup-img" src="img/prettyPhotoImages/pic9.jpg" alt="Alt">
+											</span>
+											<button style="color: #fff" title="Close (Esc)" type="button" class="mfp-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+										</span>
+									</span>
+								</span>
+							</span>
+						</a>
+						<div class="works-inter">
+							<h4><a href="#" onclick="return false;">Foil Mini Badges</a></h4>
+							<div class="view"><i class="fa fa-eye" aria-hidden="true"></i>512</div>
+							<div class="like"><a href="#" onclick="return false;"><i class="fa fa-heart-o" aria-hidden="true"></i>136</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="button-down-wrap">
+							<a href="#" class="arrow" onclick="return false;"><i class="fa fa-arrow-down" aria-hidden="true"></i>Load More Projects</a>
+							<a href="#" class="shopping-cart" onclick="return false;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Buy on Themeforest</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section class="s-news">
+		<div class="s-tree-wrap-min">
+			<div class="container">
+				<div class="row">
+					<div class="head-news">
+						<div class="col-lg-12">
+							<h1>What’s New?</h1>
+							<p>Get the latest news from our blog</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-8">
+					<div class="s-blog-item">
+						<img src="img/picNews/news1.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-8">
+					<div class="s-blog-item">
+						<img src="img/picNews/news2.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-8">
+					<div class="s-blog-item">
+						<img src="img/picNews/news3.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-8">
+					<div class="s-blog-item">
+						<img src="img/picNews/news4.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-">
+					<div class="s-blog-item">
+						<img src="img/picNews/news5.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-8">
+					<div class="s-blog-item">
+						<img src="img/picNews/news6.jpg" alt="blog-1">
+						<div class="inter">
+							<h4><a href="#" onclick="return false;">Lorem Ipsum Dolor sit Amet Pelenntesque Sodales!</a></h4>
+							<div class="calendar"><a href="#" onclick="return false;"><i class="fa fa-calendar" aria-hidden="true"></i>April 25, 2014</a></div>
+							<div class="folder"><a href="#" onclick="return false;"><i class="fa fa-folder-o"></i>Staff</a></div>
+							<div class="comments"><a href="#" onclick="return false;"><i class="fa fa-comments-o"></i>17 comments</a></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin. <a class="angle" href="#" onclick="return false;">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="s-blog-button">
+					<a href="#" class="arrow" onclick="return false;"><i class="fa fa-arrow-down" aria-hidden="true"></i> Load More news</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-questions">
+		<div class="s-tree-wrap-min">
+			<div class="container">
+				<div class="row">
+					<div class="head-news">
+						<div class="col-lg-12">
+							<h1>Got a Question? We're Here to Help!</h1>
+							<p>Get in touch with us</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="s-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="form-wrapper">
+						<form action="#" method="post">
+							<input class="name" type="text" name="name" id="name" placeholder="Name*">
+							<input class="mail" type="email" name="mail" id="mail" placeholder="Email*">
+							<input class="subject" type="text" name="subject" id="subject" placeholder="Subject">
+							<textarea class="message" name="message" id="message" placeholder="Message*"></textarea><br>
+							<span><i class="fa fa-times" aria-hidden="true"></i><input class="form-button" type="reset" value="Clear form"></span>
+							<span><i class="fa fa-share" aria-hidden="true"></i><input class="form-button" type="submit" value="Send message"></span>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="s-form-links">
+						<ul>
+							<li><a href="#" onclick="return false;"><i class="fa fa-home" aria-hidden="true"></i>5512 Lorem Ipsum Vestibulum 666/13</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-phone" aria-hidden="true"></i>+1 800 789 50 12, +1 800 450 6935</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-envelope" aria-hidden="true"></i>mail@compname.com</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+							<li><a href="#" onclick="return false;"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="s-map">
+		<span>ТУТ ТИПА КАРТА</span>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="s-down-head">
+					<h1>We Care About Our Clients and Can Make Their Life Easier!</h1>
+					<p>The main peculiarity of template is the striking presentation when visitors just need to use the scrolling option to find all necessary information about your web project.</p>
 				</div>
 			</div>
 			<div class="col-lg-12">
-				<div class="row">
-					<div class="s-blog-button">
-						<a href="#" class="arrow" onclick="return false;"><i class="fa fa-arrow-down" aria-hidden="true"></i> Load More news</a>
+				<div class="button-down">
+					<a href="#" class="arrow" onclick="return false;"><i class="fa fa-star" aria-hidden="true"></i>View All Features</a>
+					<a href="#" class="shopping-cart" onclick="return false;"><i class="fa fa-download" aria-hidden="true"></i>Buy This Template</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="s-callback">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="callback-head">
+						<h2>Subscribe for Our Newsletter!</h2>
+						<p>Subscribe to our newsletter email to get notification about fresh news, latest promos, giveaways and free stuff from Skew. Stay always up-to-date!</p>
 					</div>
 				</div>
-			</section>
+				<div class="col-lg-12">
+					<div class="callback-form-wrap">
+						<form action="#" metod="post">
+							<input class="callback-mail" type="email" name="callback-mail" id="callback-mail" placeholder="Enter Your Email">
+							<input class="callback-button" type="submit" value="Subscribe">
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<ul class="callback-social-wrap">
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-pinterest-p" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-tumblr" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-youtube-square" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-google-plus-square" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" onclick="return false;"><span><i class="fa fa-dribbble" aria-hidden="true"></i></span></a></li>
+					</ul>
+				</div>
+				<div class="dark-line-footer">
+					<div class="col-lg-12">
+					<form class="footer-search">
+					<input class="search" type="search" name="search" placeholder="Search the Site"><a href="#" onclick="return false;"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</div>
+				<div class="col-lg-5">
+					<p>Copyright © 2014 Timber HTML Template. All Rights Reserved.</p>
+				</div>
+				<div class="col-lg-7">
+					<ul class="footer-mnu">
+						<li><a href="#" onclick="return false;">Home</a></li>
+						<li><a href="#" onclick="return false;">About</a></li>
+						<li><a href="#" onclick="return false;">Projects</a></li>
+						<li><a href="#" onclick="return false;">News</a></li>
+						<li><a href="#" onclick="return false;">Contact</a></li>
+						<li><a class="no" href="#" onclick="return false;">Features</a></li>
+					</ul>
+				</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
 
-			<script>var scr = {"scripts":[
-				{"src" : "js/libs.js", "async" : false},
-				{"src" : "js/common.js", "async" : false}
-				]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):tonload=function(){c(r.scripts)}}(window,document,scr);
-			</script>
-			<script src='libs/bootstrap/js/bootstrap.min.js'></script>
-		</body>
-		</html>
+
+
+
+
+
+
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):tonload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<script src='libs/bootstrap/js/bootstrap.min.js'></script>
+</body>
+</html>
